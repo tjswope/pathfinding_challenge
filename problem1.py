@@ -82,12 +82,7 @@ def find_escape_path(grid):
 
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python problem1.py <grid_file>")
-        sys.exit(1)
-
-    filename = sys.argv[1]
-    grid = load_grid(filename)
+    grid = load_grid("problem1_small.txt")
 
     print(f"Grid size: {len(grid)} x {len(grid[0])}")
     print(f"Start: {find_char(grid, 'S')}")
