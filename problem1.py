@@ -82,7 +82,7 @@ def find_escape_path(grid):
 
 
 def main():
-    grid = load_grid("problem1_small.txt")
+    grid = load_grid("problem1_large.txt")
 
     print(f"Grid size: {len(grid)} x {len(grid[0])}")
     print(f"Start: {find_char(grid, 'S')}")
